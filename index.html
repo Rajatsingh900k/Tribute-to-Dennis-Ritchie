@@ -4,85 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tribute to Dennis Ritchie</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/images/Dennis_Ritchie_2011.jpg">
-    <!--CSS CODE-->
-    <style>
-        #dennis_img
-        {
-            width: 25%;
-            height: 25%;
-            border: 5px solid black;
-        }
-    </style>
-    <!--CSS ENDS-->
 </head>
 <body>
-    <header>
-        <h1>Dennis MacAlistair Ritchie</h1>
-        <p><em>Computer scientist</em></p>
-    </header>
+    <div class="wrapper">
+        <div id="header">
+            <nav class="header-navbar">
+                <ol class="header-navbar-list">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#biography">Biography</a></li>
+                    <li><a href="#creation-by-Dennis">Creations</a></li>
+                    <li><a href="#awards-won">Awards</a></li>
+                </ol>
+            </nav>
+        </div>
+            
+        <div class="image-section" id="home">
+            <h1>Dennis MacAlistair Ritchie</h1>
+            <p id="dennis-short-hand"><em>-Computer scientist</em></p>
+            <figure id="dennis-figbox">
+                <img id="dennis-img" src="./images/Dennis_Ritchie_2011.jpg" alt="Dennis Ritchie">
+                <figcaption id="dennis-figcaption">
+                    Dennis Ritchie
+                </figcaption>
+            </figure>
+        </div>
     
-    <div id="bodyContent">
-        <figure id="figbox">
-            <img id="dennis_img" src="/images/Dennis_Ritchie_2011.jpg" alt="Dennis Ritchie">
-            <figcaption>
-                Dennis Ritchie
-            </figcaption>
-        </figure>
-    </div>
+        <div class="bio" id="biography">
+            <h2>BIOGRAPHY</h2>
+            <p>Dennis Ritchie, an American computer scientist, was born on September 9, 1941, and passed away on October 12, 2011. His groundbreaking contributions to the field of computer science, particularly in the development of the C programming language and the UNIX operating system, have left an indelible mark on the industry.Ritchie's career began to take shape in the 1960s when he joined Bell Labs, the research and development subsidiary of AT&T. At Bell Labs, he worked alongside other notable figures such as Ken Thompson, with whom he would collaborate extensively. One of Ritchie's earliest achievements was his involvement in the development of Multics, a pioneering time-sharing operating system. However, he soon became disenchanted with Multics due to its complexity and decided to explore alternative approaches.
+                In the early 1970s, Ritchie, along with Thompson and a few others, embarked on the creation of a new operating system known as UNIX. UNIX was designed to be a simpler, more flexible, and portable operating system, allowing it to run on a variety of hardware platforms. Ritchie played a key role in the development of the C programming language, which became an integral part of UNIX. The creation of C was motivated by the desire to have a powerful and efficient programming language that could be used to implement UNIX and other software systems.
+                C became immensely popular due to its simplicity, power, and portability. Its influence spread far beyond the realm of UNIX, and it laid the foundation for many subsequent programming languages. Ritchie's work on C earned him widespread recognition, and he, along with Ken Thompson, received the Turing Award in 1983, one of the highest honors in computer science.
+                </p>
+        </div>
+        
+        <div class="creations" id="creation-by-Dennis">
+            <h2>CREATIONS</h2>
+            <ul>
+                <li>
+                    <dl>
+                        <dt><a target="_blank" href="https://en.wikipedia.org/wiki/C_(programming_language)">C Programming Language:</a></dt>
+                        <dd>Ritchie, along with Ken Thompson, developed the C programming language at Bell Labs in the early 1970s. C was designed to be a general-purpose programming language with features that allowed for low-level memory access but also provided high-level constructs. Its simplicity, efficiency, and portability made it a powerful tool for software development.
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a target="_blank" href="https://en.wikipedia.org/wiki/Unix">UNIX:</a></dt>
+                        <dd>Ritchie played a crucial role in the creation and development of the UNIX operating system. Working alongside Ken Thompson and others at Bell Labs, he contributed to the design and implementation of the original UNIX operating system in the late 1960s and early 1970s.</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Contributions to <a target="_blank" href="https://en.wikipedia.org/wiki/Compiler">Compiler Technology:</a></dt>
+                        <dd>Ritchie made contributions to compiler technology, particularly in the context of developing the C programming language. The development of C involved creating a compiler capable of translating high-level C code into machine-readable instructions, facilitating the portability of software across different hardware platforms.</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Books:</dt>
+                        <dd>Ritchie co-authored the book <a target="_blank" href="https://en.wikipedia.org/wiki/The_C_Programming_Language">"The C Programming Language"</a> (often referred to as K&R, after the initials of the authors, Kernighan and Ritchie). This book became a seminal work and served as the definitive guide to C programming for many years, contributing to the widespread adoption of the language.</dd>
+                    </dl>
+                </li>
+            </ul>    
+        </div>
     
-    <div id="bio">
-        <h2>Biography</h2>
-        <p>Dennis Ritchie, an American computer scientist, was born on September 9, 1941, and passed away on October 12, 2011. His groundbreaking contributions to the field of computer science, particularly in the development of the C programming language and the UNIX operating system, have left an indelible mark on the industry.Ritchie's career began to take shape in the 1960s when he joined Bell Labs, the research and development subsidiary of AT&T. At Bell Labs, he worked alongside other notable figures such as Ken Thompson, with whom he would collaborate extensively. One of Ritchie's earliest achievements was his involvement in the development of Multics, a pioneering time-sharing operating system. However, he soon became disenchanted with Multics due to its complexity and decided to explore alternative approaches.
-            In the early 1970s, Ritchie, along with Thompson and a few others, embarked on the creation of a new operating system known as UNIX. UNIX was designed to be a simpler, more flexible, and portable operating system, allowing it to run on a variety of hardware platforms. Ritchie played a key role in the development of the C programming language, which became an integral part of UNIX. The creation of C was motivated by the desire to have a powerful and efficient programming language that could be used to implement UNIX and other software systems.
-            C became immensely popular due to its simplicity, power, and portability. Its influence spread far beyond the realm of UNIX, and it laid the foundation for many subsequent programming languages. Ritchie's work on C earned him widespread recognition, and he, along with Ken Thompson, received the Turing Award in 1983, one of the highest honors in computer science.
-            </p>
-    </div>
+        <div class="awards" id="awards-won">
+            <h2>AWARDS</h2>
+            <p>Dennis Ritchie, a pioneering computer scientist, received several awards and honors throughout his career in recognition of his significant contributions to the field</p>
+            <br>
+            <p><b>Turing Award (1983):</b>Ritchie, along with Ken Thompson, received the Turing Award from the Association for Computing Machinery (ACM) for their development of the UNIX operating system and the C programming language. The Turing Award is widely regarded as one of the highest honors in the field of computer science.</p>
+            
+            <blockquote id="quote">
+                <p>"The only way to learn a new programming language is by writing programs in it."</p>
+                <cite>
+                    ~ Dennis Ritchie
+                </cite>
+            </blockquote>
+        </div>
     
-    <div id="creations">
-        <h2>Creations</h2>
-        <ul>
-            <li>
-                <dl>
-                    <dt><a target="_blank" href="https://en.wikipedia.org/wiki/C_(programming_language)">C Programming Language:</a></dt>
-                    <dd>Ritchie, along with Ken Thompson, developed the C programming language at Bell Labs in the early 1970s. C was designed to be a general-purpose programming language with features that allowed for low-level memory access but also provided high-level constructs. Its simplicity, efficiency, and portability made it a powerful tool for software development.
-                    </dd>
-                </dl>
-            </li>
-            <li>
-                <dl>
-                    <dt><a target="_blank" href="https://en.wikipedia.org/wiki/Unix">UNIX:</a></dt>
-                    <dd>Ritchie played a crucial role in the creation and development of the UNIX operating system. Working alongside Ken Thompson and others at Bell Labs, he contributed to the design and implementation of the original UNIX operating system in the late 1960s and early 1970s.</dd>
-                </dl>
-            </li>
-            <li>
-                <dl>
-                    <dt>Contributions to <a target="_blank" href="https://en.wikipedia.org/wiki/Compiler">Compiler Technology:</a></dt>
-                    <dd>Ritchie made contributions to compiler technology, particularly in the context of developing the C programming language. The development of C involved creating a compiler capable of translating high-level C code into machine-readable instructions, facilitating the portability of software across different hardware platforms.</dd>
-                </dl>
-            </li>
-            <li>
-                <dl>
-                    <dt>Books:</dt>
-                    <dd>Ritchie co-authored the book <a target="_blank" href="https://en.wikipedia.org/wiki/The_C_Programming_Language">"The C Programming Language"</a> (often referred to as K&R, after the initials of the authors, Kernighan and Ritchie). This book became a seminal work and served as the definitive guide to C programming for many years, contributing to the widespread adoption of the language.</dd>
-                </dl>
-            </li>
-        </ul>    
+        <div class="footer">
+            <p>©2024 rajatsingh900k@github</p>
+            <ol class="footer-list">
+                <li><a class="footer-list-item" target="_blank" href="https://rajatsingh900k.github.io/css-mysite/">About Me</a></li>
+                <li><a class="footer-list-item" target="_blank" href="https://www.instagram.com/rajat_singh_660/">Instagram</a></li>
+                <li><a class="footer-list-item" target="_blank" href="https://www.linkedin.com/in/rajat-singh-417b4a224/">LinkedIn</a></li>
+                <li><a class="footer-list-item" target="_blank" href="https://github.com/Rajatsingh900k">GitHub</a></li>
+            </ol>
+        </div>
     </div>
-
-    <div id="awards">
-        <h2>Awards</h2>
-        <p>Dennis Ritchie, a pioneering computer scientist, received several awards and honors throughout his career in recognition of his significant contributions to the field</p>
-        <p><b>Turing Award (1983):</b>Ritchie, along with Ken Thompson, received the Turing Award from the Association for Computing Machinery (ACM) for their development of the UNIX operating system and the C programming language. The Turing Award is widely regarded as one of the highest honors in the field of computer science.</p>
-    </div>
-
-    <footer>
-        <blockquote>
-            <p>"The only way to learn a new programming language is by writing programs in it."</p>
-            <cite>
-                ~ Dennis Ritchie
-            </cite>
-        </blockquote>
-    </footer>
 </body>
 </html>
